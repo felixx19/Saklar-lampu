@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cetrekan Lampu</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen width-full bg-gray-600 gap-4">
+        <!-- Lampu 1 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="Assets/Images/off.gif" alt="" id="lampu1" />
+            <label for="default-toggle1" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="default-toggle1" onchange="saklar()">
+                <div
+                    class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+                </div>
+            </label>
+        </div>
+
+        <!-- Lampu 2 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="Assets/Images/off.gif" alt="" id="lampu2" />
+            <label for="default-toggle2" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="default-toggle2" onchange="saklar()">
+                <div
+                    class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+                </div>
+            </label>
+        </div>
+
+        <!-- Lampu 3 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="Assets/Images/off.gif" alt="" id="lampu3" />
+            <label for="default-toggle3" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="default-toggle3" onchange="saklar()">
+                <div
+                    class="relative w-9 h-5 bg-neutral-quaternary peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-soft dark:peer-focus:ring-brand-soft rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-buffer after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-brand">
+                </div>
+            </label>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>
